@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="full-screen" content="true" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="360-fullscreen" content="true" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="x5-page-mode" content="app" />
+  <title>car</title>
+  <link rel="stylesheet" type="text/css" href="./src/js/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="./src/css/hero.css">
+  <script>
+    var config = {
+      pauseTime1: 35,
+      pauseTime2: 137,
+      swiper:[
+          {
+            src: './src/img/hero/b0.png',
+            intro: '关于1'
+          },
+          {
+              src: './src/img/hero/b1.png',
+              intro: '关于2'
+            },
+            {
+              src: './src/img/hero/b2.png',
+              intro: '关于3'
+            },
+            {
+              src: './src/img/hero/b3.png',
+              intro: '关于4'
+            },
+            {
+              src: './src/img/hero/b4.png',
+              intro: '关于5'
+            },
+      ]
+    }
+  </script>
+</head>
+
+<body style="background:#000">
+  <video id="video1" class="video1 hide" preload="auto" x-webkit-airplay="true" webkit-playsinline="true" playsinline="" x5-video-player-type="h5"
+    x5-video-player-fullscreen="true"
+    src="src/img/hero/a2.mp4"
+    poster=""
+  >
+  </video>
+  <div class="load-wrap">
+    <div class="loadimg"></div>
+    <div class="loadimg2"></div>
+    <div class="loadimg3"></div>
+    <div class="btn-enter hide"></div>
+    <p class="load-percent">0%</p>
+    <div></div>
+  </div>
+  <div class="page-1 hide">
+    <div class="btn1" id="hot"></div>
+  </div>
+  <div class="page-2 hide">
+    <div class="btn2" id="hot2"></div>
+  </div>
+  <div class="white-page opacity-0 hide"></div>
+  <div class="last-page hide">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button swiper-button-next1"><img class="rsrc" rsrc="./src/img/hero/left.png"></div>
+        <div class="swiper-button swiper-button-prev2"><img class="rsrc" rsrc="./src/img/hero/right.png"></div>
+        <div class="intro_img">
+          <img class="rsrc" rsrc="./src/img/hero/b00.png">
+          <img class="rsrc hide" rsrc="./src/img/hero/b11.png">
+          <img class="rsrc hide" rsrc="./src/img/hero/b22.png">
+          <img class="rsrc hide" rsrc="./src/img/hero/b33.png">
+          <img class="rsrc hide" rsrc="./src/img/hero/b44.png">
+        </div>
+        <div class="btn-box">
+            <img class="rsrc btn-return-play" rsrc="./src/img/hero/last_return.png">
+            <img class="rsrc btn-reload" rsrc="./src/img/hero/last_reload.png">
+          </div>
+    </div>
+    
+    
+  </div>
+  <div class="share-page hide">
+  </div>
+  <div class="btn-music hide"></div>
+  <div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer__content">
+      <i class="icon-wx mod-orient-layer__icon-orient"></i>
+      <div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="src/js/zepto.min.js"></script>
+<script type="text/javascript" src="src/js/swiper.min.js"></script>
+<script type="text/javascript" src="hero.js"></script>
+<script type="text/javascript">
+  $H= window.innerWidth;
+  $H2= window.innerWidth+0.08 * innerHeight * (86 / 38);
+  $('body').append('<style>@-webkit-keyframes birdfly{from{-webkit-transform:translate(120%,0);transform:translate(120%,0)}to{-webkit-transform:translate('+-$H+'px,0);transform:translate('+-$H+'px,0)}}@keyframes birdfly{from{-webkit-transform:translate(120%,0);transform:translate(120%,0)}to{-webkit-transform:translate('+-$H+'px,0);transform:translate('+-$H+'px,0)}}@-webkit-keyframes birdfly2{from{-webkit-transform:translate(120%,0);transform:translate(120%,0)}to{-webkit-transform:translate('+-$H2+'px,0);transform:translate('+-$H2+'px,0)}}</style>');
+  </script>
+</html>
